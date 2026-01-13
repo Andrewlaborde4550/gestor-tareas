@@ -1,0 +1,34 @@
+
+// Estilo para la barra de filtro acortada y centrada
+.filter-field {
+  display: block;      // Permite que margin: auto funcione
+  max-width: 300px;    // Aquí controlas qué tan corta la quieres
+  margin: 20px auto;   // El 'auto' la centra horizontalmente
+  
+  // Opcional: para que se vea más moderna
+  .mat-mdc-form-field-flex {
+    border-radius: 20px !important; 
+  }
+}
+
+// Estilo para que el spinner también esté centrado con respecto al filtro
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+// FUERZA EL COLOR VERDE EN LAS CELDAS
+.row-completed {
+  td.mat-mdc-cell {
+    background-color: #e8f5e9 !important; // Fondo verde claro
+    color: #2e7d32 !important;           // Texto verde oscuro
+    transition: background-color 0.3s ease;
+  }
+
+  // Efecto de tachado en el texto de las columnas de datos
+  .mat-column-title, 
+  .mat-column-description {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+}

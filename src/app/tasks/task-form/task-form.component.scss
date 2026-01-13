@@ -1,0 +1,34 @@
+/* task-form.component.scss */
+.taskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  // CENTRADO DEL FORMULARIO
+  max-width: 500px;      // Definimos un ancho máximo razonable
+  margin: 0 auto;        // Margen automático a los lados para centrar
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); // Un toque de sombra para resaltar
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  /* task-form.component.scss */
+
+// Estilo para cuando el botón está deshabilitado
+    button[disabled] {
+    background-color: #cccccc !important;
+    color: #666666 !important;
+    cursor: not-allowed; // Muestra el icono de "prohibido" al pasar el mouse
+    }
+
+    .actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+    }
+}

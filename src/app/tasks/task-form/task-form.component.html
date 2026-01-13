@@ -1,0 +1,30 @@
+<form [formGroup]="taskForm" 
+      #formDirective="ngForm" 
+      (ngSubmit)="onSubmit(formDirective)" 
+      class="taskForm">
+      
+    <mat-form-field appearance="fill">
+        <mat-label>Título de la Tarea</mat-label>
+        <input matInput formControlName="title" placeholder="Ej: Ir al Gym">
+        <mat-error *ngIf="taskForm.get('title')?.invalid">El título es requerido</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Descripción</mat-label>
+        <textarea matInput formControlName="description" placeholder="Mínimo 5 caracteres"></textarea>
+        <mat-error *ngIf="taskForm.get('description')?.hasError('minlength')">Mínimo 5 caracteres</mat-error>
+    </mat-form-field>
+
+    <div class="actions">
+        <button mat-raised-button 
+                color="primary" 
+                type="submit" 
+                [disabled]="taskForm.invalid">
+            {{ taskForm.value.id ? 'Actualizar Tarea' : 'Guardar Tarea' }}
+        </button>
+        
+        <button mat-button type="button" *ngIf="taskForm.value.id" (click)="resetForm(formDirective)">
+            Cancelar
+        </button>
+    </div>
+</form>
