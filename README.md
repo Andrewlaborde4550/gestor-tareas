@@ -1,6 +1,6 @@
 # Gestor de Tareas  - Angular
 
-Prueba técnica desarrollada con **Angular 17** que implementa un sistema CRUD completo, integración con API externa y optimización mediante Lazy Loading.
+Prueba técnica desarrollada con **Angular 17.3.12** que implementa un sistema CRUD completo, integración con API externa y optimización mediante Lazy Loading.
 
 ## Características
 - **Interfaz**: Uso de Angular Material con diseño responsivo.
