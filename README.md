@@ -1,27 +1,21 @@
-# TaksApp
+# 📋 Gestor de Tareas Pro - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+Prueba técnica desarrollada con **Angular 17+** que implementa un sistema CRUD completo, integración con APIs externas y optimización mediante Lazy Loading.
 
-## Development server
+## ✨ Características
+- **Interfaz Profesional**: Uso de Angular Material con diseño responsivo.
+- **Lazy Loading**: Los módulos se cargan bajo demanda para optimizar el rendimiento.
+- **Consumo de API**: Integración con JSONPlaceholder mediante `HttpClient`.
+- **Validaciones**: Formularios reactivos con validaciones en tiempo real.
+- **Tests**: Pruebas unitarias de funcionalidad principal con Jasmine/Karma.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠️ Instalación y Ejecución
+1. Clonar el repositorio: `git clone [URL-AQUÍ]`
+2. Instalar dependencias: `npm install`
+3. Ejecutar la aplicación: `ng serve`
+4. Ver en el navegador: `http://localhost:4200`
 
-## Code scaffolding
+## 🧪 Pruebas Unitarias
+Para ejecutar los tests de componentes y servicios:
+`ng test`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
